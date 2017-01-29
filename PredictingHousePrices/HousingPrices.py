@@ -23,8 +23,8 @@ class predictHousePrices:
 
 	def format_data(self):
 		self.xtrain= np.array(self.xtrain)
-		self.xtrain= self.xtrain[:, :-1]
 		self.ytrain= self.xtrain[:, -1]
+		self.xtrain= self.xtrain[:, :-1]
 		self.xtest = np.array(self.xtest)
 
 
